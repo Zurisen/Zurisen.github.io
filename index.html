@@ -1,1 +1,181 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Carlos Marcos Torrejón</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Artificial Intelligence">
+    <meta name="author" content="Carlos Marcos Torrejón">
+
+
+    <!-- <link rel="icon" type="image/ico" href="https://v1.benbarry.com/images/favicon/favicon.ico" /> -->
+    <link rel="icon" type="image/png" sizes="57x57" href="icosahedron.png" />
+    <link rel="icon" type="image/png" sizes="114x114" href="icosahedron.png" />
+    <link rel="icon" type="image/png" sizes="72x72" href="icosahedron.png" />
+    <link rel="icon" type="image/png" sizes="144x144" href="icosahedron.png" />
+    <link rel="icon" type="image/png" sizes="60x60" href="icosahedron.png" />
+    <link rel="icon" type="image/png" sizes="120x120" href="icosahedron.png" />
+    <link rel="icon" type="image/png" sizes="76x76" href="icosahedron.png" />
+    <link rel="icon" type="image/png" sizes="152x152" href="icosahedron.png" />
+    <link rel="icon" type="image/png" href="icosahedron.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="icosahedron.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="icosahedron.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="icosahedron.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="icosahedron.png" sizes="128x128" />
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107635510-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-107635510-1');
+    </script>
+
+    <style>
+
+      @font-face {
+        font-family: 'soehne';
+        src: url('assets/type/soehne-mono-web-leicht.eot'); /* IE9 Compat Modes */
+        src: url('assets/type/soehne-mono-web-leicht.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+             url('assets/type/soehne-mono-web-leicht.woff2') format('woff2'), /* Super Modern Browsers */
+             url('assets/type/soehne-mono-web-leicht.woff') format('woff') /* Pretty Modern Browsers */
+      }
+
+      @font-face {
+        font-family: 'tiempos';
+        src: url('assets/type/tiempos-text-web-regular.eot'); /* IE9 Compat Modes */
+        src: url('assets/type/tiempos-text-web-regular?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+             url('assets/type/tiempos-text-web-regular.woff2') format('woff2'), /* Super Modern Browsers */
+             url('assets/type/tiempos-text-web-regular.woff') format('woff') /* Pretty Modern Browsers */
+      }
+
+      html, body {
+        overflow: auto !important;
+        -webkit-overflow-scrolling: touch;
+        color: rgba(255, 255, 255, 0.8);
+      }
+      * {
+        font-size: 1em;
+        line-height: 1.95rem;
+        font-family: "soehne", monospace;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+
+        background-image: url('gif-Backgrounds-Wallpaper-Cave.gif');
+        }
+      }
+      #stage {
+        z-index: 10;
+      }
+      header {
+        position: relative;
+        z-index: 20;
+        padding: 5rem;
+      }
+      @media only screen and (max-width: 48em) {
+        header {
+          padding: 2rem;
+        }
+      }
+
+      header div {
+        max-width: 50rem;
+      }
+
+      @media only screen and (max-width: 56em) {
+        .hide-sm {
+          display: none;
+        }
+      }
+
+      span {
+        display: block;
+        margin-top: 2rem;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      h1 {
+        font-family: "tiempos", serif;
+        font-size: 2rem;
+        line-height: 2.75rem;
+        font-weight: normal;
+      }
+
+      @media only screen and (max-width: 48em) {
+        h1 {
+          font-size: 1.65rem;
+          line-height: 2.25rem;
+        }
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      ul:first-of-type {
+        margin-top: 2rem;
+      }
+
+      ul:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      ul li {
+        float: left;
+        margin-right: 1.5rem;
+        line-height: 2.25rem;
+      }
+
+      h1, span, ul {
+        text-shadow: 10px 10px 15px rgba(15, 10, 10, 1), -10px -10px 15px rgba(15, 10, 10, 1), 10px -10px 15px rgba(15, 10, 10, 1), -10px 10px 15px rgba(15, 10, 10, 1), 10px 10px 15px rgba(15, 10, 10, 1), -10px -10px 15px rgba(15, 10, 10, 1), 10px -10px 15px rgba(15, 10, 10, 1), -10px 10px 15px rgba(15, 10, 10, 1);
+      }
+
+      a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        border-bottom: 1.5px solid rgba(255, 255, 255, 0.15);
+      }
+
+      a:hover {
+        color: rgba(255, 255, 255, 1);
+        border-color: rgba(255, 255, 255, 1);
+        border-width: 1px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="stage"></div>
+
+    <header>
+      <div>
+        <h1>Carlos Marcos is a Nuclear Physicist and passionate<br class="hide-sm">
+          Deep Learning researcher. Using Artificial Intelligence<br class="hide-sm">
+          for the prosperity of society and science.</h1>
+
+        <span>Born in Madrid, Spain, Carlos started his scientific career graduating in Physics at Complutense University 
+        of Madrid, specializing in Nuclear Physics and working for the Spanish Research Council under the guidance of Olof Tengblad
+        and Maria José Garcia Borge. Carlos is now enroled in DTU Mathematical Modelling and Computation Msc programme, broading
+        his skills into the field of Artificial Intelligence and Data Analysis. </span>
+
+        <ul>
+          <li><a href="mailto:mtcarlos98@gmail.com" style="color:#DD4124">E-Mail</a></li>
+          <li><a href="https://www.linkedin.com/in/carlos-marcos-torrejón-81a2201b6" target="_blank" style="color:#DD4124" >LinkedIn</a></li>
+          <li><a href="https://github.com/Zurisen" target="_blank" style="color:#DD4124">Github</a></li>
+        </ul>
+
+      </div>
+    </header>
+
+  </body>
+
+</html>
